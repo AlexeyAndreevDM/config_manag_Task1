@@ -38,4 +38,4 @@ python task1.py
 4. Проверка корректного выхода из программы
 
 ## Примеры использования
-Здеь будут скриншоты с примерами использования
+<img width="994" height="416" alt="image" src="https://github.com/user-attachments/assets/f34561e7-def4-4d1b-b3ca-0ba4772352e2" />

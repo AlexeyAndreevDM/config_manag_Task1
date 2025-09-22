@@ -61,6 +61,7 @@ python task1.py --script exit_test.txt
 <img width="651" height="171" alt="Screenshot 2025-09-22 at 10 53 04" src="https://github.com/user-attachments/assets/18be39d2-4b89-4a06-b1fd-7a5c21ebb2f0" />
 <img width="650" height="100" alt="Screenshot 2025-09-22 at 10 55 50" src="https://github.com/user-attachments/assets/1ef92ce2-77a3-47c8-a112-f0da1f9fecee" />
 <img width="658" height="173" alt="Screenshot 2025-09-22 at 10 56 26" src="https://github.com/user-attachments/assets/480c8ac6-4965-4902-9ed4-abba0cc0eae1" />
+<img width="640" height="402" alt="Screenshot 2025-09-22 at 16 15 44" src="https://github.com/user-attachments/assets/9ff13a17-d350-4173-85c3-78d4f47d42db" />
 
 
 

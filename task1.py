@@ -122,10 +122,10 @@ while True:
 # python task1.py --script exit_test.txt
 
 # Интерактивный режим
-# python shell_emulator.py
+# python task1.py
 
 # С указанием пути VFS
-# python shell_emulator.py --vfs-path /custom/path --script test_with_errors.sh
+# python task1.py --vfs-path /custom/path --script error_test.txt
 
 # С несуществующим скриптом - для демонстрация обработки ошибки
-# python shell_emulator.py --script nonexistent.sh
+# python task1.py --script nonexistent.txt

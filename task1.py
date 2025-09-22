@@ -75,7 +75,7 @@ if args.script:
             for line in f:
                 line = line.strip()
                 # Пропускаем пустые строки и комментарии
-                if not line or line.startswith('#'):
+                if not line:
                     continue
                 
                 # Эмулируем ввод пользователя
@@ -86,17 +86,21 @@ if args.script:
                     print(result)
                 # Если команда exit, прерываем выполнение скрипта
                 if should_exit:
-                    print("Exit command found in script. Exiting...")
                     sys.exit(0)
                     
     except FileNotFoundError:
-        # Если файл скрипта не найден, выводим ошибку и продолжаем в интерактивном режиме
-        print(f"Error: Script file '{args.script}' not found. Starting interactive mode...", file=sys.stderr)
+        # Если файл скрипта не найден, выводим ошибку
+        print(f"Error: Script file '{args.script}' not found.", file=sys.stderr)
+        sys.exit(1)
     except Exception as e:
-        # При других ошибках скрипта выводим сообщение и продолжаем в интерактивном режиме
-        print(f"Error executing script: {str(e)}. Starting interactive mode...", file=sys.stderr)
+        # При других ошибках скрипта выводим сообщение
+        print(f"Error executing script: {str(e)}", file=sys.stderr)
+        sys.exit(1)
+    
+    # После успешного выполнения скрипта завершаем программу
+    sys.exit(0)
 
-# Основной цикл
+# Основной цикл (только если скрипт не указан)
 while True:
     try:
         # Чтение команды от пользователя
@@ -114,18 +118,3 @@ while True:
     # Выход при команде exit
     if should_exit:
         break
-
-
-# для запуска скриптов
-# python task1.py --script normal_test.txt
-# python task1.py --script error_test.txt
-# python task1.py --script exit_test.txt
-
-# Интерактивный режим
-# python task1.py
-
-# С указанием пути VFS
-# python task1.py --vfs-path /custom/path --script error_test.txt
-
-# С несуществующим скриптом - для демонстрация обработки ошибки
-# python task1.py --script nonexistent.txt

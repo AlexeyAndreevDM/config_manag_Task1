@@ -1,0 +1,3 @@
+ls -l
+unknown_command
+cd /invalid/path

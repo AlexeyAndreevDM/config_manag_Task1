@@ -1,0 +1,3 @@
+ls -l
+cd /home/user
+ls -a -l

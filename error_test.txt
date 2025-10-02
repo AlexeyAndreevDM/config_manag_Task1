@@ -1,3 +1,6 @@
-ls -l
+ls /nonexistent
 unknown_command
 cd /invalid/path
+cal invalid
+cal 13 2024
+cal 1 10000

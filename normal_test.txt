@@ -1,3 +1,9 @@
-ls -l
-cd /home/user
-ls -a -l
+who
+ls
+cd 3_level_VFS/lvl2
+ls
+cal
+cd ..
+ls
+whoami
+cal 12 2025
